@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Dog Registration | BRCC-DMS
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="css/forms.css"
+  >
+
+</head>
+
+
+<body>
+
+  <div class="page">
+
+    <header class="header">
+
+      <div class="logo-box">
+        <div class="logo-placeholder">
+          BTO
+        </div>
+      </div>
+
+      <div>
+        <h1>
+          BRCC-DMS DOG REGISTRY
+        </h1>
+
+        <p>
+          Barangay Tupol Oeste
+        </p>
+
+        <p>
+          Cabatuan, Iloilo
+        </p>
+      </div>
+
+    </header>
+
+
+    <main class="card">
+
+      <h2>
+        Dog Registration
+      </h2>
+
+      <p class="intro">
+        Please provide the correct information
+        about the dog and its owner.
+      </p>
+
+
+      <form id="registrationForm">
+
+
+        <!-- =========================================
+             OWNER INFORMATION
+        ========================================== -->
+
+        <section>
+
+          <h3>
+            Owner Information
+          </h3>
+
+
+          <label>
+            Owner Name
+            <span>*</span>
+          </label>
+
+          <input
+            type="text"
+            id="ownerName"
+            required
+          >
+
+
+          <label>
+            Sitio
+            <span>*</span>
+          </label>
+
+          <input
+            type="text"
+            id="sitio"
+            required
+          >
+
+
+          <label>
+            Complete Address
+            <span>*</span>
+          </label>
+
+          <textarea
+            id="address"
+            rows="3"
+            required
+          ></textarea>
+
+
+          <label>
+            Contact Number
+            <span>*</span>
+          </label>
+
+          <input
+            type="tel"
+            id="contactNumber"
+            inputmode="numeric"
+            required
+          >
+
+        </section>
+
+
+        <!-- =========================================
+             DOG INFORMATION
+        ========================================== -->
+
+        <section>
+
+          <h3>
+            Dog Information
+          </h3>
+
+
+          <label>
+            Dog Name
+            <span>*</span>
+          </label>
+
+          <input
+            type="text"
+            id="dogName"
+            required
+          >
+
+
+          <label>
+            Breed
+            <span>*</span>
+          </label>
+
+          <input
+            type="text"
+            id="breed"
+            required
+          >
+
+
+          <label>
+            Color / Markings
+            <span>*</span>
+          </label>
+
+          <textarea
+            id="colorMarkings"
+            rows="3"
+            required
+          ></textarea>
+
+
+          <label>
+            Sex
+            <span>*</span>
+          </label>
+
+          <select
+            id="sex"
+            required
+          >
+
+            <option value="">
+              Select Sex
+            </option>
+
+            <option value="Male">
+              Male
+            </option>
+
+            <option value="Female">
+              Female
+            </option>
+
+          </select>
+
+
+          <label>
+            Birthdate
+            <span>*</span>
+          </label>
+
+          <input
+            type="date"
+            id="birthdate"
+            required
+          >
+
+
+          <label>
+            Dog Photo
+          </label>
+
+          <input
+            type="file"
+            id="dogPhoto"
+            accept="image/*"
+          >
+
+          <small>
+            Photo upload will be connected to
+            the system storage in the next step.
+          </small>
+
+        </section>
+
+
+        <!-- =========================================
+             DECLARATION
+        ========================================== -->
+
+        <section>
+
+          <h3>
+            Declaration
+          </h3>
+
+          <label class="checkbox">
+
+            <input
+              type="checkbox"
+              id="declaration"
+              required
+            >
+
+            <span>
+              I certify that the information
+              provided is true and correct.
+            </span>
+
+          </label>
+
+        </section>
+
+
+        <!-- =========================================
+             SUBMIT
+        ========================================== -->
+
+        <button
+          type="submit"
+          id="submitButton"
+        >
+
+          Submit Registration
+
+        </button>
+
+
+        <div
+          id="message"
+          class="message"
+          hidden
+        ></div>
+
+
+      </form>
+
+    </main>
+
+
+    <footer>
+
+      BRCC-DMS DOG REGISTRY
+
+    </footer>
+
+  </div>
+
+
+  <script src="js/config.js"></script>
+
+  <script src="js/registration.js"></script>
+
+</body>
+
+</html>
